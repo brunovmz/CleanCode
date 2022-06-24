@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.Extensions.Logging;
 using Sat.Recruitment.Application.DTOs.User;
 using Sat.Recruitment.Application.Features.Users.Requests.Queries;
-using Sat.Recruitment.UnitOfWork.SqlServer;
+using Sat.Recruitment.UnitOfWork.Interface;
 
 namespace Sat.Recruitment.Application.Features.Users.Handlers.Queries
 {

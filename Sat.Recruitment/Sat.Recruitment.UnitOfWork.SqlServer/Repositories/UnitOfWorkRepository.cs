@@ -1,7 +1,7 @@
 ﻿
-using Sat.Recruitment.UnitOfWork.SqlServer;
+using Sat.Recruitment.UnitOfWork.Interface;
 
-namespace Sat.Recruitment.UnitOfWork.Interface.Repositories
+namespace Sat.Recruitment.UnitOfWork.SqlServer.Repositories
 {
     public class UnitOfWorkRepository : IUnitOfWorkRepository
     {
@@ -14,5 +14,10 @@ namespace Sat.Recruitment.UnitOfWork.Interface.Repositories
         }
 
         public IUserRepository UserRepository => _userRepository ??= new UserRepository(_context);
+
+        public async Task SaveAsync()
+        {
+            await _context.SaveChangesAsync();
+        }
     }
 }

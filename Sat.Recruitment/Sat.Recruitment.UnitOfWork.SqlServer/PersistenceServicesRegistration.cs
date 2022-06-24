@@ -2,11 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Sat.Recruitment.UnitOfWork.Interface.Repositories;
-using Sat.Recruitment.UnitOfWork.SqlServer;
-using Sat.Recruitment.UnitOfWork.SqlServer.Contracts;
+using Sat.Recruitment.UnitOfWork.Interface;
+using Sat.Recruitment.UnitOfWork.Interface.Contracts;
+using Sat.Recruitment.UnitOfWork.SqlServer.Repositories;
 
-namespace Sat.Recruitment.UnitOfWork.Interface
+namespace Sat.Recruitment.UnitOfWork.SqlServer
 {
     public static class PersistenceServicesRegistration
     {

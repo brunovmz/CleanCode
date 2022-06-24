@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
 using Sat.Recruitment.Domain;
-using Sat.Recruitment.UnitOfWork.SqlServer;
+using Sat.Recruitment.UnitOfWork.Interface;
 
-namespace Sat.Recruitment.UnitOfWork.Interface.Repositories
+namespace Sat.Recruitment.UnitOfWork.SqlServer.Repositories
 {
     public class UserRepository : GenericRepository<User>, IUserRepository
     {
@@ -26,6 +26,12 @@ namespace Sat.Recruitment.UnitOfWork.Interface.Repositories
         public async Task AddUser(User user)
         {
             await _dbContext.AddAsync(user);
+        }
+
+        public async Task<bool> Exist(User user)
+        {
+            return await _dbContext.Users.AnyAsync(q => (q.Email == user.Email || q.Phone == user.Phone) || 
+                                                        (q.Name == user.Name && q.Address == user.Address));
         }
     }
 }

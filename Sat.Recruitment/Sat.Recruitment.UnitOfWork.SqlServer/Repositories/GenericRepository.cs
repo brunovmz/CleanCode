@@ -1,8 +1,8 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using Sat.Recruitment.UnitOfWork.SqlServer.Contracts;
+using Sat.Recruitment.UnitOfWork.Interface.Contracts;
 
-namespace Sat.Recruitment.UnitOfWork.Interface.Repositories
+namespace Sat.Recruitment.UnitOfWork.SqlServer.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {

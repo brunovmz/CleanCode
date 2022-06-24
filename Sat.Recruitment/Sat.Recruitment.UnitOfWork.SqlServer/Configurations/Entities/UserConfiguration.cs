@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Sat.Recruitment.Domain;
 
-namespace Sat.Recruitment.UnitOfWork.Interface.Configurations.Entities
+namespace Sat.Recruitment.UnitOfWork.SqlServer.Configurations.Entities
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {

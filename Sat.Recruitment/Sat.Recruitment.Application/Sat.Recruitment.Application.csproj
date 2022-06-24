@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Users\Handlers\Commands\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.1.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
@@ -18,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sat.Recruitment.UnitOfWork.SqlServer\Sat.Recruitment.UnitOfWork.SqlServer.csproj" />
+    <ProjectReference Include="..\Sat.Recruitment.UnitOfWork.Interface\Sat.Recruitment.UnitOfWork.Interface.csproj" />
   </ItemGroup>
 
 </Project>

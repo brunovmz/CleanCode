@@ -1,4 +1,5 @@
 ﻿
+using AutoMapper;
 using FluentValidation;
 using Sat.Recruitment.Application.Configurations;
 
@@ -6,7 +7,7 @@ namespace Sat.Recruitment.Application.DTOs.User.Validators
 {
     public class CreateUserDtoValidator : AbstractValidator<CreateUserDto>
     {
-        public CreateUserDtoValidator( )
+        public CreateUserDtoValidator()
         {
             RuleFor(p => p.Name)
                 .NotEmpty()

@@ -13,17 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{83E52730-5ED9-4A6B-8D6C-738D34141F5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sat.Recruitment.Api", "Sat.Recruitment.Api\Sat.Recruitment.Api.csproj", "{B0F97D77-9038-4397-AA4F-67F4EC746320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.Api", "Sat.Recruitment.Api\Sat.Recruitment.Api.csproj", "{B0F97D77-9038-4397-AA4F-67F4EC746320}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sat.Recruitment.Application", "Sat.Recruitment.Application\Sat.Recruitment.Application.csproj", "{E20E6B3F-A274-4DDF-9CA3-9E4F1AF10633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.Application", "Sat.Recruitment.Application\Sat.Recruitment.Application.csproj", "{E20E6B3F-A274-4DDF-9CA3-9E4F1AF10633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sat.Recruitment.Domain", "Sat.Recruitment.Domain\Sat.Recruitment.Domain.csproj", "{36F223A7-9019-463D-A13F-5251EE5EE0FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.Domain", "Sat.Recruitment.Domain\Sat.Recruitment.Domain.csproj", "{36F223A7-9019-463D-A13F-5251EE5EE0FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sat.Recruitment.UnitOfWork.Interface", "Sat.Recruitment.UnitOfWork.Interface\Sat.Recruitment.UnitOfWork.Interface.csproj", "{2F3424C2-3CB7-4AA1-9506-178E0B90AB0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.UnitOfWork.SqlServer", "Sat.Recruitment.UnitOfWork.SqlServer\Sat.Recruitment.UnitOfWork.SqlServer.csproj", "{2F3424C2-3CB7-4AA1-9506-178E0B90AB0B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{24D98773-11FE-405E-AF18-1B96B4F31B31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sat.Recruitment.UnitOfWork.SqlServer", "Sat.Recruitment.UnitOfWork.SqlServer\Sat.Recruitment.UnitOfWork.SqlServer.csproj", "{BC3841E1-D0AF-4019-BAE1-8935529BB0E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.UnitOfWork.Interface", "Sat.Recruitment.UnitOfWork.Interface\Sat.Recruitment.UnitOfWork.Interface.csproj", "{BC3841E1-D0AF-4019-BAE1-8935529BB0E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

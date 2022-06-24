@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Sat.Recruitment.Domain;
 
-namespace Sat.Recruitment.UnitOfWork.Interface
+namespace Sat.Recruitment.UnitOfWork.SqlServer
 {
     public class RepositoryDbContext : AuditableDbContext
     {

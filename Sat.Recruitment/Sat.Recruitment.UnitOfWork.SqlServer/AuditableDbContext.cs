@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Sat.Recruitment.Domain.Common;
 
-namespace Sat.Recruitment.UnitOfWork.Interface
+namespace Sat.Recruitment.UnitOfWork.SqlServer
 {
     public abstract class AuditableDbContext : DbContext
     {
@@ -14,7 +14,7 @@ namespace Sat.Recruitment.UnitOfWork.Interface
         public virtual async Task<int> SaveChangesAsync()
         {
             foreach (var entry in base.ChangeTracker.Entries<BaseDomainUserEntity>()
-                         .Where(q => q.State == EntityState.Added || q.State == EntityState.Modified))
+                         .Where(q => q.State is EntityState.Added or EntityState.Modified))
             {
                 entry.Entity.LastModifiedDate = DateTime.Now;
             }

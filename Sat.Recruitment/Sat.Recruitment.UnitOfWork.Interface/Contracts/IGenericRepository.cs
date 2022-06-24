@@ -1,5 +1,5 @@
 ﻿
-namespace Sat.Recruitment.UnitOfWork.SqlServer.Contracts
+namespace Sat.Recruitment.UnitOfWork.Interface.Contracts
 {
     public interface IGenericRepository<T> where T : class
     {
