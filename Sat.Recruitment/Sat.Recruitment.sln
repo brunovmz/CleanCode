@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{24D98773-11FE-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sat.Recruitment.UnitOfWork.Interface", "Sat.Recruitment.UnitOfWork.Interface\Sat.Recruitment.UnitOfWork.Interface.csproj", "{BC3841E1-D0AF-4019-BAE1-8935529BB0E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sat.Recruitment.Api.Test", "Sat.Recruitment.Api.Test\Sat.Recruitment.Api.Test.csproj", "{425F3D18-6071-408F-A670-97B16C4D5A9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BC3841E1-D0AF-4019-BAE1-8935529BB0E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC3841E1-D0AF-4019-BAE1-8935529BB0E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC3841E1-D0AF-4019-BAE1-8935529BB0E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{425F3D18-6071-408F-A670-97B16C4D5A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425F3D18-6071-408F-A670-97B16C4D5A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425F3D18-6071-408F-A670-97B16C4D5A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425F3D18-6071-408F-A670-97B16C4D5A9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{2F3424C2-3CB7-4AA1-9506-178E0B90AB0B} = {14F5ABED-FC19-4B96-9874-A7CC13A13395}
 		{24D98773-11FE-405E-AF18-1B96B4F31B31} = {14F5ABED-FC19-4B96-9874-A7CC13A13395}
 		{BC3841E1-D0AF-4019-BAE1-8935529BB0E0} = {24D98773-11FE-405E-AF18-1B96B4F31B31}
+		{425F3D18-6071-408F-A670-97B16C4D5A9C} = {83E52730-5ED9-4A6B-8D6C-738D34141F5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41E2AD80-87C9-4237-951D-C8A9BED78FD9}

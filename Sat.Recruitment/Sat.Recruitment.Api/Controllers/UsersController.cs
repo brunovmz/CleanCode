@@ -21,8 +21,12 @@ namespace Sat.Recruitment.Api.Controllers
             _logger = logger;
         }
 
+        /// <summary>
+        /// This endpoint creates a new User by validating specific criteria
+        /// </summary>
+        /// <param name="userDto">Request contains all data necesary to create a new User</param>
+        /// <returns>If the operation is successfull return the new Id created else return a list of errors </returns>
         [HttpPost]
-        [Route("/create-user")]
         public async Task<ActionResult<BaseCommandResponse>> CreateUser([FromBody] CreateUserDto userDto)
         {
             _logger.LogInformation("Method invoked {request}", Constants.UserPost);
@@ -32,8 +36,11 @@ namespace Sat.Recruitment.Api.Controllers
             return Ok(response);
         }
 
+        /// <summary>
+        /// This endpoint return a list of Users without filters
+        /// </summary>
+        /// <returns>List of Users</returns>
         [HttpGet]
-        [Route("/get-all-user")]
         public async Task<ActionResult<List<UserListDto>>> GetAllUsers()
         {
             _logger.LogInformation("Method invoked {request}", Constants.UserGet);
