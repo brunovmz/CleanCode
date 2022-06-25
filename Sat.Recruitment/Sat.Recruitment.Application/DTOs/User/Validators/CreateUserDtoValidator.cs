@@ -14,7 +14,7 @@ namespace Sat.Recruitment.Application.DTOs.User.Validators
                 .NotNull()
                 .WithMessage(Constants.PropertyNameRequired);
 
-            RuleFor(p => p.Adrress)
+            RuleFor(p => p.Address)
                 .NotEmpty()
                 .NotNull()
                 .WithMessage(Constants.PropertyNameRequired);

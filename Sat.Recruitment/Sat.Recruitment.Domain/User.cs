@@ -11,7 +11,7 @@ namespace Sat.Recruitment.Domain
         public int Id { get; set; }
 
         [Column(TypeName = "varchar(50)")]
-        public string UserType { get; set; }
+        public string UserType { get; set; } = string.Empty;
 
         [Column(TypeName = "decimal(18, 3)")]
         public decimal Money { get; set; }

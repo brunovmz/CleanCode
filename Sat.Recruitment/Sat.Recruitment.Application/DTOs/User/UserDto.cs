@@ -10,6 +10,6 @@ namespace Sat.Recruitment.Application.DTOs.User
         public string Adrress { get; set; } = string.Empty;
         public string Phone { get; set; } = string.Empty;
         public string UserType { get; set; } = string.Empty;
-        public decimal Money { get; set; }
+        public string Money { get; set; } = string.Empty;
     }
 }

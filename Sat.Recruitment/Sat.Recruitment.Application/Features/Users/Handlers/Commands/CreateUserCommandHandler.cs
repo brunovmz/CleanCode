@@ -15,9 +15,9 @@ namespace Sat.Recruitment.Application.Features.Users.Handlers.Commands
     {
         private readonly IUnitOfWorkRepository _unitOfWorkRepository;
         private readonly IMapper _mapper;
-        private readonly ILogger _logger;
+        private readonly ILogger<CreateUserCommandHandler> _logger;
 
-        public CreateUserCommandHandler(IUnitOfWorkRepository unitOfWorkRepository, IMapper mapper, ILogger logger)
+        public CreateUserCommandHandler(IUnitOfWorkRepository unitOfWorkRepository, IMapper mapper, ILogger<CreateUserCommandHandler> logger)
         {
             _unitOfWorkRepository = unitOfWorkRepository;
             _mapper = mapper;

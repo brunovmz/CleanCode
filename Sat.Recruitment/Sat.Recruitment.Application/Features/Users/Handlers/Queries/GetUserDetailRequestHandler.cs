@@ -12,9 +12,9 @@ namespace Sat.Recruitment.Application.Features.Users.Handlers.Queries
     {
         private readonly IMapper _mapper;
         private readonly IUserRepository _userRepository;
-        private readonly ILogger _logger;
+        private readonly ILogger<GetUserDetailRequestHandler> _logger;
 
-        public GetUserDetailRequestHandler(IMapper mapper, IUserRepository userRepository, ILogger logger)
+        public GetUserDetailRequestHandler(IMapper mapper, IUserRepository userRepository, ILogger<GetUserDetailRequestHandler> logger)
         {
             _mapper = mapper;
             _userRepository = userRepository;

@@ -1,6 +1,7 @@
 ﻿
 using AutoMapper;
 using Sat.Recruitment.Application.DTOs.User;
+using Sat.Recruitment.Application.Helpers;
 using Sat.Recruitment.Domain;
 
 namespace Sat.Recruitment.Application.Profiles
@@ -11,7 +12,12 @@ namespace Sat.Recruitment.Application.Profiles
         {
             #region User Mappins
 
-            CreateMap<User, CreateUserDto>().ReverseMap();
+            CreateMap<CreateUserDto, User>()
+                .ForMember(dest => dest.Money, opt => opt.MapFrom(src => Functions.CalculateMoney(src)))
+                .ReverseMap();
+
+            CreateMap<User, UserListDto>()
+                .ReverseMap();
 
             #endregion
         }
