@@ -28,18 +28,19 @@ La web API tiene 2 endpoint para la tabla _Permission Request_
 ## Prerequisites
 
 ### Local Machine
-- [] SDK Net 6
-- [] SQL Server 2019
+- SDK Net 6
+- SQL Server 2019
 ### Run project Docker
--  [] Tener instalado Docker
--  [] 4 GB como mínimo de memoria disponible
+- Tener instalado Docker
+- 4 GB como mínimo de memoria disponible
 
 ## Execution Docker
 
 Pasos para ejecutar el proyecto con Docker Compose.
-- [] Abrir una consola y ubicarse en la carpeta donde se encuentra el archivo _docker-compose_
-- [] Ejecutar el siguiente comando:
-```
+- Abrir una consola y ubicarse en la carpeta donde se encuentra el archivo _docker-compose_
+- Ejecutar el siguiente comando:
+
+```powershell
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
 Cuando finalice la descarga de imagenes y el contenedor esté ejecutándose correctamente, en un browser puede ingresar a los siguientes servicios disponibles:
@@ -55,7 +56,8 @@ Cuando finalice la descarga de imagenes y el contenedor esté ejecutándose corr
 ## Off Execution Docker
 
 Para eliminar el container, ejecutar el siguiente comando:
-```
+
+```powershell
 docker-compose -f docker-compose.yml -f docker-compose.override.yml down
 ```
 > **Note**
